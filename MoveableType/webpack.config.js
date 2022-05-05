@@ -6,7 +6,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'babylonjs-moveable-type.js',
     library: {
-      name: "babylonjs-moveable-type",
+      name: {
+        root: 'MoveableType',
+        amd: 'babylonjs-moveable-type',
+        commonjs: 'babylonjs-moveable-type',
+      },
       type: "umd"
     },
   },
